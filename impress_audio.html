@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIANO SKETCHES</title>
+  <link rel="icon" type="image/png" href="logoaflabelicon.png">
+    <style>
+    
+      audio::-webkit-media-controls-panel{
+
+            padding: 17px 10px 18px;
+            background-color: rgba(10, 10, 10, 0.027);
+        }
+
+        
+:root{
+    --main-color: linear-gradient(rgb(113, 10, 10),rgb(90, 5, 5),rgb(205, 6, 6));
+    --dkr: rgb(53,9,9);
+    --cbr:  rgb(104,10,10);
+    --mdr: rgb(75,9,9);
+
+   --bre: rgb(46, 3, 3);
+
+    --h: "\2630";
+
+    --wsm: #f5f5f5;   /*cc*/
+  --wol:  #fdf5e6;
+  --wdw: #ecefec;  
+}
+
+
+       body{
+
+filter: contrast(90%), sepia(90%);
+
+            background: var(--wsm);
+
+overflow: scroll;
+
+font-family: "Playfair Display", serif;
+
+font-optical-sizing: auto;
+
+font-size: 13px;
+
+font-style: normal;
+
+max-width: 120dvw;
+
+
+background-position: 100% 50%;
+
+
+justify-content: center;
+
+text-align: center;
+
+align-items: center;
+
+
+
+
+
+letter-spacing: 1px;
+
+font-weight: lighter;
+
+}
+
+
+        audio{
+    border-radius: 70px;
+    padding: 2px;
+    transform: 3d;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+        }
+
+        source{
+            border-radius: none;
+            transform: perspective(500px);
+        }
+
+        td{
+          
+            padding: 48px 10px 15px 50px;
+            margin-left: -40px;
+ 
+           
+        }
+        audio::-webkit-media-controls-play-button{
+            padding: 15px 20px;
+            margin-left: 10px;
+            margin-right: 3px;
+        }
+
+        audio::-webkit-media-controls-play-button::after{
+            padding: 20px;
+            
+            content: "\1F3A7 ";
+        }
+
+        td,th{
+            display: grid;
+            width: 70vw;
+        }
+
+        audio::-webkit-media-controls-volume-slider{
+  
+ background-color: rgba(97, 13, 13, 0.712);
+            transition: margin 24s forwards ease-in
+        }
+        
+        table{
+             transform: perspective(800px);
+            display: grid;
+            gap: 10px;
+          margin-top: -0px !important;
+            padding: 39px;
+            margin-left: -10px;
+            margin-right: -35px;
+ 
+background-image: linear-gradient(to left, rgba(0,0,0,0.048), rgba(19,18,18,0.24)),rgba(37,37,37,0.301),rba(20,20,20,0.801) !important;
+            
+        }
+
+        @media screen and (max-width: 780px){
+            input[type="radio"]{
+                display: none;
+            }
+        }
+
+        nav{
+            background-color: black;
+            height: 10vw;
+         
+            margin-left: -10px;
+            margin-top: -28px;
+            padding: 10px 10px 30px;
+            box-shadow: 20px 30px 40px;
+            width: 115vw;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+         input[type="range"] {
+
+            width: 50px;
+
+
+            accent-color: rgba(65, 63, 63, 0.801);
+
+            height: 30px;
+
+
+margin-top: -9vw;
+            margin-left: 27vw;
+
+        }
+
+        
+        #firstpg_linkagem {
+
+            margin-left: 10vw;
+            margin-top: 10px;
+position: relative;
+display: flex;
+            color: rgb(83, 83, 83);
+
+            font-family: "Karantina", system-ui;
+
+            font-weight: 300;
+
+            font-style: normal;
+
+            letter-spacing: 3px;
+
+        }
+
+
+
+        #firstpg_linkagem:before {
+
+            content: '< ';
+
+        }
+
+
+
+        input[type="range"]::-webkit-slider-runnable-track {
+
+            accent-color: black;
+
+            background-color: black;
+            border-radius: 17px;
+
+            border: 1px solid rgba(73, 70, 70, 0.274);
+
+            outline: 3px solid rgba(0, 0, 0, 0.418);
+        }
+        figure{
+            height: 40vh;
+            mask-image: 20px 30px 40px black ;
+
+            filter: contrast(88%), sepia(97%),brightness(10px) !important;
+            box-shadow: inset 80px -120px 90px;
+     
+           
+            width: 121vw ;
+ background-image: url(figurefortopalbum.png);
+
+ background-repeat: no-repeat;
+            margin-top: -5px;
+            margin-left: -70px;
+        }
+        audio::-webkit-media-controls-enclosure{
+            border-radius: 10px;
+        background-color:  hsla(0, 6%, 97%, 0.767);
+            padding: 2px;
+        }
+        audio::-webkit-media-controls-timeline{
+            color: red;
+          background: var(--dkr);
+            height: 3px;
+            border-radius: 30px;
+            padding: 1px;
+            
+        }
+
+        audio::-webkit-media-controls-timeline:hover{
+       background: var(--wdw);
+        }
+
+        audio::-webkit-media-controls-current-time-display{
+         color: rgb(76, 75, 75);
+        margin-right: -12px
+        }
+
+        audio::-webkit-media-controls-time-remaining-display{
+                     color: rgba(37, 36, 36, 0.733);
+         padding: 1px 15px;
+        }
+
+        #seconaud{
+            margin-top: -35px
+        }
+
+        .impresses{
+            display: none !important;
+        }
+
+        #testlate{
+          margin-top: -40px;
+          display: grid;
+          gap: 30px;
+        }
+        
+        @media (min-width: 414px) and (max-width: 896px){
+            figure{
+                width: 130vw;
+              max-width: 200vw
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px){
+            table{
+             
+                padding: 10px;
+
+            }
+            thead{
+               
+                margin-left: 10vh
+            }
+
+            #testlate{
+                margin-left: 15vw;
+            }
+            nav a{
+                margin-top: 10vw !important;
+                
+            }
+
+            figure{
+           
+              display: none;
+            }
+
+            nav{
+                box-shadow: none;
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px){
+            #testlate{
+                margin-left: 20vw ;
+                margin-top: -26px;
+            }
+            input[type="radio"]{
+                display: none;
+            }
+
+            nav a{
+                margin-top: 15vw ;
+                color: rgb(212, 211, 211) !important;
+         
+                margin-left: 10vw !important;
+            }
+        }
+
+        @media (min-width: 820px) and (max-width: 1180px){
+            #testlate{
+                margin-left: 11vh
+            }
+
+            input[type="radio"]{
+                display: none;
+            }
+
+               nav a{
+                margin-top: 15vw ;
+                color: rgb(212, 211, 211) !important;
+         
+                margin-left: 10vw !important;
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px){
+            #testlate{
+                margin-left: 15vh;
+            }
+        }
+
+        @media (min-width: 912px) and (max-width:1368px){
+            #testlate{
+                margin-left: 12vh
+            }
+        }
+
+        @media (min-width: 540px) and (max-width: 720px){
+            nav a{
+                margin-top: 8vw !important;
+            }
+
+            figure{
+                   mask-image: 20px 30px 40px black ;
+
+            filter: contrast(88%), sepia(97%),brightness(10px) !important;
+            box-shadow: inset 80px -120px 90px;
+            }
+
+            thead{
+                margin-left: 9vw;
+            }
+
+            #testlate{
+                margin-left: 6vw
+            }
+        }
+
+        @media (min-width: 334px) and (max-width: 882px){
+            thead{
+                margin-left: -2vh
+            }
+
+            figure{
+               background-image: url(fgaudiopgmindevice.png);
+               width: 90vh;
+               filter: sepia(68%);
+               margin-top: 1px;
+           
+            }
+        }
+
+        @media (min-width: 540px) and (max-width:720px){
+            thead{
+                margin-left: 8vh;
+            }
+            figure{
+                display: none;
+                margin-top: -1px
+            }
+
+            nav{
+                box-shadow: 10px 10px 90px;
+            }
+
+            nav a{
+                color: gray !important;
+            }
+        }
+
+        @media (min-width: 344px) and (max-width: 882px){
+            figure{
+
+                display: none;
+        }
+
+        thead{
+            margin-left: 5vw
+        }
+
+        nav{
+            box-shadow: 10px 10px 80px;
+        }
+
+        nav a{
+            color: rgb(199, 192, 192) !important;
+            
+        }
+        
+    }
+
+
+/* Radios block*/
+
+
+    @media (min-width: 853px) and (max-width: 1280px){   
+        thead{
+            margin-left: 15vw;
+
+        }
+
+        input[type="radio"]{
+            display: block;
+        }
+        table{
+           margin-top: 10vh !important
+        }
+
+    }
+
+
+    
+
+@keyframes transparent_intro{
+
+0%{
+
+background-color: black;
+
+-webkit-text-fill-color: rgba(0, 0, 0, 0.432);
+
+text-decoration: rgba(0, 0, 0, 0.541);
+
+background-position: 100% 0%;
+
+background-size: 100% 50%;
+
+
+}
+
+10%{
+
+background-color: rgba(36, 35, 35, 0.596);
+
+filter: blur(3px);
+
+
+
+}
+
+20%{
+
+background-image: linear-gradient(to left, white,gray,white,white);
+
+filter: blur(3px);
+
+
+
+}
+
+30%{
+
+background-image: linear-gradient(to right, white,rgba(128, 128, 128, 0.432),white,white);
+
+filter: blur(3px);
+
+transform: scale(1.0);
+
+}
+
+50%{
+
+background-image: linear-gradient(to right, white,gray,white,white);
+
+filter: blur(1px);
+
+transform: scale(1.0);
+
+}
+
+60%{
+
+
+filter: brightness(3px);
+
+}
+
+80%{
+
+
+filter: brightness(2px);
+
+}
+
+}
+
+
+    @media (width: 1024px){
+        #testlate{
+            margin-left: 20vw
+        }
+    }
+
+    @media (width: 1280px){
+        figure{
+            display: none;
+        }
+        nav{
+            box-shadow: 10px 30px 90px
+        }
+        nav a {
+            margin-top: 17vh !important
+        }
+
+        #testlate{
+            margin-left: 37vh !important
+        }
+    }
+
+    @media screen and (min-width: 980px){
+        figure{
+            display: none !important;
+        }
+        nav{
+            box-shadow: 10px 30px 90px;
+            margin-top: -10vh
+        }
+
+        #testlate{
+            margin-left: 27vw
+        }
+
+        thead{
+            margin-left: 28vh
+        }
+
+        nav a{
+            margin-top: 13vh !important;
+            color: gray !important;
+            margin-left: 50vw !important
+        }
+    }
+
+    footer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: 9%;
+    margin-left: -15px;
+    height: 220px;
+    width: 100vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: none;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+@media screen and (max-width: 980px) {
+    footer {
+        margin-top: 25vh;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .footer-textcontent {
+        display: flex
+;
+        margin-left: -13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-textcontent {
+        margin-left: 22vw;
+        margin-top: 8vh;
+    }
+}
+
+.footer-textcontent {
+    display: flex
+;
+
+color:  rgba(82, 76, 29, 0.842) !important;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin-left: 44%;
+}
+
+#gh-link{
+    margin-right: 10vh
+}
+
+footer a{
+     color: rgba(82, 76, 29, 0.842)
+}
+
+    
+    </style>
+</head>
+<body>
+     <nav title="Navegador" >
+
+
+
+                            <a title="Voltar para Primeira Página" onclick="javascript:history.go(-1)"  id="firstpg_linkagem" href="index.php"  title="Voltar para Primeira Página">Voltar </a>
+
+                  
+                            </nav>
+
+    <figure title="Imagem Ilustrativa"></figure>
+
+
+    <table title="Álbum" >
+
+        <thead>
+            
+      <tr>
+
+        <th> </th>
+        <th></th>
+
+      </tr>
+            <td>
+                <source id="sour1">
+                <audio title="Áudio"  src=""  ></audio><input type="radio">
+            </td>
+
+            <td>
+
+                <source id="seconddemo">
+                <audio  title="Áudio"  src="" id="secnddemo"></audio>
+            </td>
+
+           <td>
+            <source id="testlate">
+            <audio  title="Áudio"  src=""></audio>
+           </td>
+
+           <td>
+            <source id="yowrs">
+            <audio  title="Áudio"  src=""></audio>
+           </td>
+
+        </thead>
+
+    </table>
+
+<footer>
+ 
+       <div class="footer-textcontent" title="Criador">
+       <p id="gh-link" ><a onclick="javascript:history.go(1)"   href="https://github.com/01809?tab=repositories&fbclid=PAZXh0bgNhZW0CMTEAAafQY8M2VdaSH2yBPtQmS_mn7XT4MoNRqbfPBaAnGxzjiG6rz2JH8FuzJb_aqg_aem_yS-eJoDu6Ro_CpN6X90_HQ">&copy; 01809 &nbsp;</a></p>
+       <p id="ig-link"><a onclick="javascript:history.go(1)"   href="https://www.instagram.com/_.andreydamas/">@andrey_damas</a></p>
+       </div>
+
+      
+<p></p>
+
+ </div>
+
+
+     </footer>
+</body>
+
+<script>
+
+    const faudio = document.getElementById('audio1');
+const s= document.getElementById('sour1')
+    const aud = document.createElement('audio');
+    aud.setAttribute('controls', 'controls');
+
+
+    aud.src= 'flowerboytypebeatn1.wav'
+    s.appendChild(aud);
+
+const ss = document.getElementById('seconddemo');
+const auds = document.createElement('audio')
+auds.setAttribute('controls', 'controls');
+auds.src = 'jazz_jam.wav';
+auds.id= "seconaud"
+ss.appendChild(auds);
+
+const latest = [
+    "linhaj62latestaudiofiles.wav",
+    "echosecondaudiofile.wav",
+    "flowerboy.wav",
+    "maia_soft.wav"
+];
+
+
+    const subpDest = "newownsound/";
+
+    const bottomaudimpress = document.getElementById('testlate')
+
+    latest.forEach(audiolat =>{
+
+        const eaf = document.createElement("audio");
+        eaf.controls = true;
+        eaf.classList.add = ('impresses')
+        eaf.src = `${subpDest}${audiolat}`;
+
+        bottomaudimpress.appendChild(eaf)
+    })
+
+    const newer=[
+        "php4B9B.mp3"
+    ]
+
+    const usersb = "userfiles/";
+const userimpress = document.getElementById('yowrs')
+ newer.forEach(received=>{
+
+    const ua = document.createElement("audio");
+    ua.setAttribute = ('controls', 'controls');
+
+    ua.src = `${usersb}${received}`;
+    userimpress.appendChild($ua)
+ })
+
+
+      const seletor = document.getElementById('changer');
+    
+    const corpo = document.body;
+
+
+   seletor.addEventListener("input", ()=>{
+  
+    const chve = seletor.value;
+    b.style.backgroundColor = wdw;
+
+    if(chve>0){
+        corpo.style.backgroundColor= 'white';
+      
+      
+    }  else{
+        corpo.style.backgroundColor = 'black';
+      
+
+    }
+
+   })
+
+
+
+
+</script>
+</html> 
